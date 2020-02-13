@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>详情页</title>
+</head>
+<body>
+    <h1>这里是详情页</h1>
+    <ul>
+        {% for book in books.hero_set.all %}
+            <li>{{book.name}}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
